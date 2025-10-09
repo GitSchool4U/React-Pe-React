@@ -1,0 +1,19 @@
+CHALLENGE 1:
+
+https://www.codingnepalweb.com/wp-content/uploads/2022/12/Top-2010-20Profile-20Card-20Template-20Designs-20in-20HTML-20-amp-20CSS.jpg
+
+Objective: Develop a responsive React application displaying user profiles.
+
+    1. Component Creation: Build a reusable UserCard component. ✅
+
+    2. Dynamic Content: Ensure the component is dynamic by accepting user data through props. ✅
+
+    3. Layout: Implement a grid layout to display multiple user cards. ✅
+
+    Optional - Best Practice: To improve code readability and scalability, create a JSON data structure for user information and render the user cards by mapping through this data. ✅
+
+Technical Requirements:
+
+    Styling: All styling must be done using Tailwind CSS. ✅
+
+    Responsiveness: The layout should be fully responsive across different screen sizes. ✅
