@@ -1,40 +1,35 @@
-import { useState } from "react";
-import ProductList from "./ProductList";
-import products from './data.json'
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
-const App = () => {
-  const [count, setCount] = useState(0);
-  const [msg, setMsg] = useState('Not Selected');
-  const [search, setSearch] = useState("");
-
-  const filteredProducts = products.filter((p) =>
-    p.name.toLowerCase().includes(search.toLowerCase())
-  )
-
-  const handleClick = (item) => {
-    const msg = `${item} is selected..!`
-    setMsg(msg);
-  };
+function App() {
+  const [count, setCount] = useState(0)
 
   return (
-    <div>
-      <h1>Counter: {count}</h1>
-      <button onClick={() => setCount(count + 1)}>Increment</button>
+    <>
+      <div>
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
+  )
+}
 
-      <br /><br />
-
-      <input
-        placeholder="Search product..."
-        value={search}
-        onChange={(e) => setSearch(e.target.value)}
-        className="outline px-2 py-1 rounded-sm"
-      />
-
-      <ProductList products={filteredProducts} onClick={handleClick} />
-
-      <h1>{msg}</h1>
-    </div>
-  );
-};
-
-export default App;
+export default App

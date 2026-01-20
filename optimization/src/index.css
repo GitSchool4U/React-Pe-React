@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+*{
+  font-family: "Roboto";
+}
+
+button{
+  background: #000;
+  color:white;
+  border-radius: 10px;
+  padding: 5px 12px;
+  transition: all linear 0.2s;
+  cursor: pointer;
+}
+
+button:hover{
+  background: #1e1e1e;
+}
+
+button:active{
+  scale: 0.9;
+}
+
+body{
+  padding: 10px;
+}
